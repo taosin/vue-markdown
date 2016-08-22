@@ -1,19 +1,14 @@
 <template>
   <div id="app">
-    <img class="logo" src="./assets/logo.png">
-    <hello></hello>
     <p>Markdown</p>
     <Markdown></Markdown>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
 import Markdown from './markdown/index'
-
 export default {
   components: {
-    Hello,
     Markdown
   }
 }
@@ -33,10 +28,8 @@ body {
 
 #app {
   color: #2c3e50;
-  margin-top: -100px;
-  max-width: 600px;
   font-family: Source Sans Pro, Helvetica, sans-serif;
-  text-align: center;
+  width: 100%;
 }
 
 #app a {
@@ -44,8 +37,4 @@ body {
   text-decoration: none;
 }
 
-.logo {
-  width: 100px;
-  height: 100px
-}
 </style>

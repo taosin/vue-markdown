@@ -30,9 +30,10 @@
 <style type="text/css">
 	html, body, #editor {
 		margin: 0;
-		height: 100%;
+		height: 600px;
 		font-family: 'Helvetica Neue', Arial, sans-serif;
 		color: #333;
+		width: 100%;
 	}
 
 	textarea, #editor div {
@@ -58,6 +59,6 @@
 	}
 
 	code {
-		color: #f66;
+		color: #e0e0e0;
 	}
 </style>
