@@ -83,6 +83,22 @@
     	color: #657b83;
 	}
 	table{
-
+		margin-bottom: 20px;
+		border: 1px solid #dddddd;
+		width: 100%;
+    	background-color: transparent;
+    	border-collapse: collapse;
+    	border-spacing: 0;
+    	font-size: 16px;
+	}
+	table thead th{
+		border: 1px solid #dddddd;
+		height: 30px; 
+		padding: 0 10px;
+	}
+	table tbody td{
+		height: 30px;
+		border: 1px solid #dddddd;
+		padding: 0 10px;
 	}
 </style>
