@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <p>Markdown</p>
     <Markdown></Markdown>
   </div>
 </template>
@@ -29,7 +28,9 @@ body {
 #app {
   color: #2c3e50;
   font-family: Source Sans Pro, Helvetica, sans-serif;
-  width: 100%;
+  width:100%; 
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 #app a {

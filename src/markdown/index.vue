@@ -2,13 +2,13 @@
 	<div>
 		<div id="editor">
 			<textarea v-model="input" debounce="300"></textarea>
-			<div v-html="input | marked"></div>
+			<div v-html="input | marked" class="marked"></div>
 		</div>
+		<button @click="submit">ok</button>
 	</div>
 </template>
 <script>
 	export default{
-	  el: '#editor',
 	  data () {
 	    return {
 	      input: '# hello'
@@ -24,6 +24,9 @@
 	  computed: {
 	  },
 	  methods: {
+	    submit () {
+	      alert(this.input)
+	    }
 	  }
 	}
 </script>
@@ -35,8 +38,7 @@
 		color: #333;
 		width: 100%;
 	}
-
-	textarea, #editor div {
+	#editor > textarea, .marked{
 		display: inline-block;
 		width: 49%;
 		height: 100%;
@@ -47,7 +49,7 @@
 		padding: 0 20px;
 	}
 
-	textarea {
+	#editor> textarea{
 		border: none;
 		border-right: 1px solid #ccc;
 		resize: none;
@@ -58,11 +60,11 @@
 		padding: 20px;
 	}
 
-	code {
+	.marked > code {
 		color: #657b83;
 
 	}
-	pre{
+	.marked > pre{
 		overflow: auto;
 		display: block;
     	padding: 9.5px;
@@ -82,7 +84,7 @@
     	background: #fdf6e3;
     	color: #657b83;
 	}
-	table{
+	.marked > table{
 		margin-bottom: 20px;
 		border: 1px solid #dddddd;
 		width: 100%;
@@ -91,14 +93,26 @@
     	border-spacing: 0;
     	font-size: 16px;
 	}
-	table thead th{
+	.marked > table thead th{
 		border: 1px solid #dddddd;
 		height: 30px; 
 		padding: 0 10px;
 	}
-	table tbody td{
+	.marked > table tbody td{
 		height: 30px;
 		border: 1px solid #dddddd;
 		padding: 0 10px;
+	}
+	.marked > table tbody tr:hover{
+		background: #f5f5f5;
+	}
+	.marked >h1{
+		font-size: 48px;
+	}
+	.marked >h2{
+		font-size: 42px;
+	}
+	.marked > img{
+		width: 100%;
 	}
 </style>
