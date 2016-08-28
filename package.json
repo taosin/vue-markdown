@@ -1,9 +1,9 @@
 {
-  "name": "vue-markdown",
-  "version": "1.0.0",
+  "name": "vue-s-markdown",
+  "version": "2.1.1",
   "description": "a component of markdown for vue",
   "author": "iMocco",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
@@ -72,5 +72,22 @@
     "webpack-dev-middleware": "^1.4.0",
     "webpack-hot-middleware": "^2.6.0",
     "webpack-merge": "^0.8.3"
-  }
+  },
+  "main": ".eslintrc.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taosin/vue-markdown.git"
+  },
+  "keywords": [
+    "vue",
+    "markdown"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taosin/vue-markdown/issues"
+  },
+  "homepage": "https://github.com/taosin/vue-markdown#readme"
 }

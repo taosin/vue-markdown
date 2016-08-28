@@ -1,5 +1,5 @@
 # vue-markdown
-a component of markdown edit for vue
+a simple component of markdown edit for vue
 
 developing...
 
@@ -25,4 +25,12 @@ npm run e2e
 npm test
 ```
 
+
+## Useage
+
+```
+<Markdown :content.sync="content"></Markdown>
+
+import { Markdown } from 'vue-s-markdown'
+```
 
