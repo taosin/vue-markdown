@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <Markdown></Markdown>
+    <Markdown :content.sync="content"></Markdown>
+    <button @click="submit">ddd</button>
   </div>
 </template>
 
@@ -9,6 +10,16 @@ import Markdown from './markdown/index'
 export default {
   components: {
     Markdown
+  },
+  data () {
+    return {
+      content: ''
+    }
+  },
+  methods: {
+    submit () {
+      alert(this.content)
+    }
   }
 }
 </script>

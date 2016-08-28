@@ -1,18 +1,24 @@
 <template>
 	<div>
 		<div id="editor">
-			<textarea v-model="input" debounce="300"></textarea>
-			<div v-html="input | marked" class="marked"></div>
+			<textarea v-model="content" debounce="300"></textarea>
+			<div v-html="content | marked" class="marked"></div>
 		</div>
-		<button @click="submit">ok</button>
+		<!-- <button @click="submit">ok</button> -->
 	</div>
 </template>
 <script>
 	export default{
 	  data () {
 	    return {
-	      input: '# hello'
+	      // input: '# hello'
 	    }
+	  },
+	  props: {
+	    content: {
+      type: String,
+      twoWay: true
+    }
 	  },
 	  filters: {
 	    marked: marked
