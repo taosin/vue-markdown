@@ -10,9 +10,9 @@ npm install vue-s-markdown
 
 ```
 
-eg:
+## eg:
 
-```
+```html
 <template>
   <div>
     <Markdown :content.sync="content"></Markdown>
