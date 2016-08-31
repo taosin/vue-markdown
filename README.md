@@ -10,10 +10,27 @@ npm install vue-s-markdown
 
 ```
 
-```javascript
+eg:
 
-<Markdown :content.sync="content"></Markdown>
+```
+<template>
+  <div>
+    <Markdown :content.sync="content"></Markdown>
+  </div>
+</template>
 
-import { Markdown } from 'vue-s-markdown'
+<script>
+import Markdown from './markdown/index'
+export default {
+  components: {
+    Markdown
+  },
+  data () {
+    return {
+      content: ''
+    }
+  }
+}
+</script>
 ```
 

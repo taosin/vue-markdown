@@ -8,6 +8,7 @@
 	</div>
 </template>
 <script>
+	const marked = require('./../../static/js/marked.min.js')
 	export default{
 	  data () {
 	    return {
@@ -66,9 +67,12 @@
 		padding: 20px;
 	}
 
-	.marked > code {
-		color: #657b83;
-
+	.marked > p > code {
+		padding: 4px 8px;
+    	font-size: 14px;
+    	color: #657b83;
+    	background-color: #f9f2f4;
+    	border-radius: 4px;
 	}
 	.marked > pre{
 		overflow: auto;

@@ -15,11 +15,6 @@ export default {
     return {
       content: ''
     }
-  },
-  methods: {
-    submit () {
-      alert(this.content)
-    }
   }
 }
 </script>
