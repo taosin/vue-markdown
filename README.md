@@ -20,7 +20,7 @@ npm install vue-s-markdown
 </template>
 
 <script>
-import Markdown from './markdown/index'
+import Markdown from 'vue-s-markdown/src/markdown/index'
 export default {
   components: {
     Markdown
