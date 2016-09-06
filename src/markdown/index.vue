@@ -125,4 +125,14 @@
 	.marked > img{
 		width: 100%;
 	}
+	.marked > blockquote{
+		padding: 10px 15px;
+    	margin-bottom: 20px;
+    	background-color: whitesmoke;
+    	border-left: 4px solid #999999;
+    	word-break: break-word;
+    	font-size: 15px;
+    	font-weight: 100;
+    	line-height: 30px;
+	}
 </style>
