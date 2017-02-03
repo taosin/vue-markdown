@@ -1,4 +1,4 @@
-# vue-markdown
+# vue-markdown [demo](http://markdown.iamtaoxin.com)
 >a simple component of markdown edit for vue
 >一个在vue.js 1.0中使用的简单的markdown示例，如有不当，敬请指出！
 ----
