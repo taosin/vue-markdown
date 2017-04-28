@@ -6,5 +6,6 @@ import Markdown from './markdown/index'
 new Vue({
   el: 'body',
   components: { App,
-  Markdown }
+  Markdown },
+  render: h => h(App)
 })

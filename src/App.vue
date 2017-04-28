@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <Markdown :content.sync="content"></Markdown>
-    <button @click="submit">ddd</button>
+    <Markdown :content="contents"></Markdown>
   </div>
 </template>
 
@@ -13,7 +12,7 @@ export default {
   },
   data () {
     return {
-      content: ''
+      contents: ''
     }
   }
 }
